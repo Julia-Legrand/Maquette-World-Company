@@ -1,1 +1,22 @@
-/***** COLORS *****//*# sourceMappingURL=style.css.map */
+/***** COLORS *****/
+/***** FONTS *****/
+h1 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+}/*# sourceMappingURL=style.css.map */
