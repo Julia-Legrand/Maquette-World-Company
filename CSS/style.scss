@@ -1,2 +1,55 @@
 @import 'variables';
+@import 'mixins';
+
+/***** GLOBAL *****/
+
+h1 {
+    @include title1;
+}
+
+h2 {
+    @include title2
+}
+
+h3 {
+    @include title3;
+}
+
+p {
+    @include paragraph;
+}
+
+/***** HEADER *****/
+
+
+
+
+/***** OUR THEME *****/
+
+
+
+
+/***** OUR INDUSTRIES *****/
+
+
+
+
+/***** ADVICE *****/
+
+
+
+
+/***** OUR TEAM *****/
+
+
+
+
+/***** COMMENTS *****/
+
+
+
+
+/***** FOOTER *****/
+
+
 

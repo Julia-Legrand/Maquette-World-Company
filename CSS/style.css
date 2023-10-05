@@ -1,5 +1,6 @@
 /***** COLORS *****/
 /***** FONTS *****/
+/***** GLOBAL *****/
 h1 {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
@@ -19,4 +20,12 @@ h3 {
 
 p {
   font-family: "Montserrat", sans-serif;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/***** HEADER *****/
+/***** OUR THEME *****/
+/***** OUR INDUSTRIES *****/
+/***** ADVICE *****/
+/***** OUR TEAM *****/
+/***** COMMENTS *****/
+/***** FOOTER *****//*# sourceMappingURL=style.css.map */
