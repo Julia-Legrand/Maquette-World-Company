@@ -4,18 +4,23 @@
 h1 {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
+  letter-spacing: 2px;
   font-size: 40px;
+  font-weight: bold;
+  margin: 20px;
 }
 
 h2 {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-size: 20px;
+  letter-spacing: 3px;
 }
 
 h3 {
   font-family: "Montserrat", sans-serif;
-  font-size: 15px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 p {
@@ -23,9 +28,359 @@ p {
 }
 
 /***** HEADER *****/
+header i {
+  color: #C39A6A;
+  margin: 0 10px;
+}
+header .contact-details {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+header .contact-details .addresses {
+  display: flex;
+}
+header .contact-details .addresses .address {
+  display: flex;
+}
+header .contact-details .addresses .mail {
+  display: flex;
+  margin: 0 30px;
+}
+header .contact-details .phoneNumber {
+  display: flex;
+}
+header .navbar {
+  background-color: #5D5D5D;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  height: 60px;
+}
+header .navbar .navbar-brand:hover {
+  text-decoration: underline;
+}
+header .navbar .navbar-nav a {
+  color: white;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  height: 60px;
+}
+header .navbar .navbar-nav a:hover {
+  color: #C39A6A;
+  border-bottom: 2px solid #C39A6A;
+}
+header .home-title {
+  background-image: linear-gradient(rgba(50, 49, 49, 0.8), rgba(30, 30, 30, 0.3)), url(../images/company.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header .home-title h2, header .home-title h1, header .home-title P {
+  color: white;
+  text-align: center;
+}
+
 /***** OUR THEME *****/
+#ourTheme {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+#ourTheme .themeText {
+  width: 600px;
+  height: 40vh;
+  margin-right: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#ourTheme .themeText h2::after {
+  display: block;
+  height: 2px;
+  background-color: #C39A6A;
+  width: 100px;
+  content: "";
+  margin-top: 15px;
+}
+#ourTheme .themeText a {
+  color: #C39A6A;
+}
+#ourTheme .themePicture {
+  background-image: url(../images/code.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  height: 50vh;
+}
+#ourTheme .themePicture .blocTheme {
+  width: 95%;
+  height: 95%;
+  border: 1px solid white;
+}
+
 /***** OUR INDUSTRIES *****/
+#ourIndustries {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F9F4F0;
+}
+#ourIndustries .industriesTitle {
+  margin: 50px 10px 0px 10px;
+  text-align: center;
+}
+#ourIndustries .industries {
+  display: flex;
+}
+#ourIndustries .industries .industry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  margin: 50px 20px 50px 20px;
+  text-align: center;
+}
+#ourIndustries .industries .industry h3 {
+  margin: 15px;
+}
+#ourIndustries .industries .industry .icons i {
+  color: white;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #C39A6A;
+}
+
 /***** ADVICE *****/
+#advice {
+  background-image: linear-gradient(rgba(50, 49, 49, 0.8), rgba(30, 30, 30, 0.3)), url(../images/working.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#advice .blocAdvice {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 99%;
+  height: 95%;
+  border: 1px solid white;
+}
+#advice .blocAdvice .adviceTitle {
+  margin: 40px;
+  text-align: center;
+}
+#advice .blocAdvice .advice {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+#advice .blocAdvice .advice .stats {
+  margin: 0 40px;
+}
+#advice .blocAdvice .advice .number {
+  font-weight: bold;
+  font-size: 30px;
+}
+
 /***** OUR TEAM *****/
+#ourTeam {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#ourTeam .teamTitle {
+  margin: 70px 0 30px 0;
+  text-align: center;
+}
+#ourTeam .employees {
+  display: flex;
+}
+#ourTeam .employees .employee {
+  width: 280px;
+  margin: 10px;
+}
+#ourTeam .employees .employee .employee-img {
+  width: 280px;
+  height: 280px;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 10px;
+}
+#ourTeam .employees span {
+  font-weight: bold;
+}
+#ourTeam .employees .phone {
+  color: #C39A6A;
+}
+#ourTeam .employees p {
+  font-size: 12px;
+}
+#ourTeam .partners {
+  margin: 50px;
+}
+#ourTeam .partners img {
+  width: 80px;
+  height: auto;
+  margin: 30px;
+}
+
 /***** COMMENTS *****/
-/***** FOOTER *****//*# sourceMappingURL=style.css.map */
+#comments {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F9F4F0;
+}
+#comments .commentsTitle {
+  margin: 60px 0 20px 0;
+  text-align: center;
+}
+#comments .commentsLine {
+  display: flex;
+}
+#comments .commentsLine .employeeComments {
+  display: flex;
+  margin: 40px;
+}
+#comments .commentsLine .employeeComments .picture .picture-img {
+  width: 150px;
+  height: 130px;
+  margin: 0 10px 10px 0;
+  background-position: center;
+  background-size: cover;
+}
+#comments .commentsLine .employeeComments .textComment {
+  font-size: 12px;
+  width: 280px;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+#comments .commentsLine .employeeComments .textComment .title, #comments .commentsLine p {
+  padding-left: 5px;
+  margin: 0;
+}
+#comments .commentsLine .employeeComments .textComment img {
+  height: 40px;
+  width: 120px;
+}
+
+/***** FOOTER *****/
+footer {
+  background-image: linear-gradient(rgba(50, 49, 49, 0.8), rgba(30, 30, 30, 0.3)), url(../images/skyscrapers.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+footer .mainSocials {
+  display: flex;
+  margin: 50px 0;
+}
+footer .mainSocials .business {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 400px;
+  margin: 20px;
+  font-size: 12px;
+}
+footer .mainSocials .business .businessTitle {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+footer .mainSocials .business .followers {
+  color: #C39A6A;
+}
+footer .mainSocials .business .followers::after {
+  display: block;
+  height: 1px;
+  background-color: #C39A6A;
+  width: 400px;
+  content: "";
+  margin-top: 15px;
+}
+footer .mainSocials .business .followUs {
+  display: flex;
+}
+footer .mainSocials .business .followUs i {
+  color: #C39A6A;
+  margin: 0 8px;
+}
+footer .mainSocials .business .mailForm {
+  display: flex;
+}
+footer .mainSocials .business .mailForm form {
+  background-color: white;
+}
+footer .mainSocials .business .mailForm .subscribe {
+  background-color: #C39A6A;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 0 30px;
+  border: none;
+}
+footer .mainSocials .blog {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 400px;
+  height: 400px;
+  margin: 20px;
+}
+footer .mainSocials .blog .article {
+  display: flex;
+  margin: 10px 0;
+}
+footer .mainSocials .blog .article .blog-img img {
+  height: 80px;
+  width: 100px;
+}
+footer .mainSocials .blog .article .text {
+  height: 80px;
+  font-size: 12px;
+  margin-left: 10px;
+}
+footer .mainSocials .blog .article .text small {
+  color: #C39A6A;
+  font-size: 10px;
+}
+footer .mainSocials .instagram {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 20px;
+}
+footer .mainSocials .instagram .insta-img-line {
+  display: flex;
+}
+footer .mainSocials .instagram .insta-img-line .insta-img img {
+  height: 90px;
+  width: 120px;
+}/*# sourceMappingURL=style.css.map */

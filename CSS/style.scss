@@ -20,36 +20,363 @@ p {
 }
 
 /***** HEADER *****/
-
-
-
+header {
+    i {
+        color: $darkbrown;
+        margin: 0 10px;
+    }
+    .contact-details {
+        display: flex;
+        justify-content: space-around;
+        margin: 10px;
+            .addresses {
+                display: flex;
+                    .address {
+                        display: flex;
+                    }
+                    .mail {
+                        display: flex;
+                        margin: 0 30px;
+                    }
+            }
+            .phoneNumber {
+                display: flex;
+            }
+    }
+    .navbar {
+        background-color: $darkgrey;
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+        height: 60px;
+            .navbar-brand:hover {
+                text-decoration: underline;
+            }
+            .navbar-nav a {
+                color: white;
+                margin: 0 10px;
+                display: flex;
+                align-items: center;
+                padding: 0;
+                height: 60px;
+            }
+            .navbar-nav a:hover {
+                color: $darkbrown;
+                border-bottom: 2px solid $darkbrown;
+            }
+    }
+    .home-title {
+        background-image: linear-gradient(rgba(50, 49, 49, 0.8), rgba(30, 30, 30, 0.3)), url(../images/company.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+            h2, h1, P {
+                color: white;
+                text-align: center;
+            }
+    }
+}
 
 /***** OUR THEME *****/
-
-
-
+#ourTheme {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+        .themeText {
+            width: 600px;
+            height: 40vh;
+            margin-right: 90px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+                h2::after {
+                    display: block;
+                    height: 2px;
+                    background-color: $darkbrown;
+                    width: 100px;
+                    content: "";
+                    margin-top: 15px;
+                }
+                a {
+                    color: $darkbrown;
+                }
+        }
+        .themePicture {
+            background-image: url(../images/code.jpg);
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 700px;
+            height: 50vh;
+                .blocTheme {
+                    width: 95%;
+                    height: 95%;
+                    border: 1px solid white;
+                }
+        }
+}
 
 /***** OUR INDUSTRIES *****/
-
-
-
+#ourIndustries {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $lightbrown;
+        .industriesTitle {
+            margin: 50px 10px 0px 10px;
+            text-align: center;
+        }
+        .industries {
+            display: flex;
+                .industry {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 300px;
+                    margin: 50px 20px 50px 20px;
+                    text-align: center;
+                }
+                .industry h3 {
+                    margin: 15px;
+                }
+                .industry .icons i {
+                    color: white;
+                    font-size: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+                    background-color: $darkbrown;
+                }
+        }
+}        
 
 /***** ADVICE *****/
-
-
-
+#advice {
+    background-image: linear-gradient(rgba(50, 49, 49, 0.8), rgba(30, 30, 30, 0.3)), url(../images/working.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        .blocAdvice {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 99%;
+            height: 95%;
+            border: 1px solid white;
+                .adviceTitle {
+                    margin: 40px;
+                    text-align: center;
+                }
+                .advice {
+                    display: flex;
+                    justify-content: space-evenly;
+                    text-align: center;
+                }
+                .advice .stats {
+                    margin: 0 40px;
+                }
+                .advice .number {
+                    font-weight: bold;
+                    font-size: 30px;
+                }
+        }
+}
 
 /***** OUR TEAM *****/
-
-
-
+#ourTeam {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        .teamTitle {
+            margin: 70px 0 30px 0;
+            text-align: center;
+        }
+        .employees {
+            display: flex;
+                .employee {
+                    width: 280px;
+                    margin: 10px;
+                }
+                .employee .employee-img {
+                    width: 280px;
+                    height: 280px;
+                    background-position: center;
+                    background-size: cover;
+                    margin-bottom: 10px;
+                }
+                span {
+                    font-weight: bold;
+                }
+                .phone {
+                    color: $darkbrown;
+                }
+                p {
+                    font-size: 12px;
+                }
+        }
+        .partners {
+            margin: 50px;
+                img {
+                    width: 80px;
+                    height: auto;
+                    margin: 30px;
+                }
+        }
+}
 
 /***** COMMENTS *****/
-
-
-
+#comments {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $lightbrown;
+        .commentsTitle {
+            margin: 60px 0 20px 0;
+            text-align: center;
+        }
+        .commentsLine {
+            display: flex;
+                .employeeComments {
+                    display: flex;
+                    margin: 40px;
+                }
+                .employeeComments .picture .picture-img {
+                    width: 150px;
+                    height: 130px;
+                    margin: 0 10px 10px 0;
+                    background-position: center;
+                    background-size: cover;
+                }
+                .employeeComments .textComment {
+                    font-size: 12px;
+                    width: 280px;
+                    height: 130px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: start;
+                }
+                .employeeComments .textComment .title, p {
+                    padding-left: 5px;
+                    margin: 0;
+                }
+                .employeeComments .textComment img {
+                    height: 40px;
+                    width: 120px;
+                }
+        }
+}
 
 /***** FOOTER *****/
-
+footer {
+    background-image: linear-gradient(rgba(50, 49, 49, 0.8), rgba(30, 30, 30, 0.3)), url(../images/skyscrapers.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+        .mainSocials {
+            display: flex;
+            margin: 50px 0;
+        }
+        .mainSocials .business {
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            height: 400px;
+            margin: 20px;
+            font-size: 12px;
+                .businessTitle {
+                    font-weight: bold;
+                    font-size: 30px;
+                    margin-bottom: 30px;
+                }
+                .followers {
+                    color: $darkbrown;
+                }
+                .followers::after {
+                    display: block;
+                    height: 1px;
+                    background-color: $darkbrown;
+                    width: 400px;
+                    content: "";
+                    margin-top: 15px;
+                }
+                .followUs {
+                    display: flex;
+                }
+                .followUs i {
+                    color: $darkbrown;
+                    margin: 0 8px;
+                }
+                .mailForm {
+                    display: flex;
+                }
+                .mailForm form {
+                    background-color: white;
+                }
+                .mailForm .subscribe {
+                    background-color: $darkbrown;
+                    color: white;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    padding: 0 30px;
+                    border: none;
+                }
+        }
+        .mainSocials .blog {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            width: 400px;
+            height: 400px;
+            margin: 20px;
+                .article {
+                    display: flex;
+                    margin: 10px 0;
+                }
+                .article .blog-img img {
+                    height: 80px;
+                    width: 100px;
+                }
+                .article .text {
+                    height: 80px;
+                    font-size: 12px;
+                    margin-left: 10px;
+                }
+                .article .text small {
+                    color: $darkbrown;
+                    font-size: 10px;
+                }
+        }
+        .mainSocials .instagram {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            margin: 20px;
+                .insta-img-line {
+                    display: flex;
+                }
+                .insta-img-line .insta-img img {
+                    height: 90px;
+                    width: 120px;
+                }
+        }
+}
 
 

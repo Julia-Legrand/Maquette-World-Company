@@ -11,7 +11,7 @@
     <!--FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
 
     <!--STYLES-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -22,16 +22,16 @@
     <header>
         <div class="contact-details">
             <div class="addresses">
-                <i class="fa-solid fa-location-dot"></i><p>Grand Road Avenue 25, New York, USA</p>
-                <i class="fa-solid fa-envelope"></i><p>contact@gmail.com</p>
+                <div class="address"><i class="fa-solid fa-location-dot"></i><p>Grand Road Avenue 25, New York, USA</p></div>
+                <div class="mail"><i class="fa-solid fa-envelope"></i><p>contact@gmail.com</p></div>
             </div>
-            <div class="phone">
+            <div class="phoneNumber">
                 <i class="fa-solid fa-phone"></i><p>+4 72 123456 78</p>
             </div>
         </div>
 
-        <nav class="navbar navbar-expand-md navbar-dark">
-            <a class="navbar-brand" href="index.html">Business</a>
+        <nav class="navbar navbar-expand-md">
+            <a class="navbar-brand" href="index.html" style="color: #C39A6A;">Business</a>
 
             <div class="navbarMenu">
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#myMenu" aria-controls="myMenu" aria-expanded="false" aria-label="Menu for mobile">
@@ -40,11 +40,11 @@
             
                 <div class="collapse navbar-collapse" id="myMenu">
                     <div class="navbar-nav">
-                        <a class="nav-item nav-link" href="index.html" style="color: #C39A6A";>Home</a>
-                        <a class="nav-item nav-link" href="#" style="color: white;">About us</a>
-                        <a class="nav-item nav-link" href="#" style="color: white;">Pages</a>
-                        <a class="nav-item nav-link" href="#" style="color: white;">News</a>
-                        <a class="nav-item nav-link" href="#" style="color: white;">Contact us</a>
+                        <a class="nav-item nav-link" href="index.html">Home</a>
+                        <a class="nav-item nav-link" href="#ourTheme">Our theme</a>
+                        <a class="nav-item nav-link" href="#ourIndustries">Our industries</a>
+                        <a class="nav-item nav-link" href="#advice">Advice</a>
+                        <a class="nav-item nav-link" href=".home-title">Contact us</a>
                     </div>
                 </div>
             </div>
@@ -53,7 +53,7 @@
         <div class="home-title">
             <h2>Help you to start business</h2>
             <h1>Come to the king theme you will win</h1>
-            <button type="button" class="btn btn-warning" style="background-color: #C39A6A; border: none; padding: 10px 35px; text-transform: uppercase;">Contact us</button>
+            <button type="button" class="btn btn-warning" style="background-color: #C39A6A; border: none; padding: 10px 35px; text-transform: uppercase; color: white;">Contact us</button>
         </div>
     </header>
 
@@ -62,37 +62,38 @@
         <div class="themeText">
             <h2>Welcome to our theme</h2>
             <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</P>
+            <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</P>
             <a href="/">Read more</a>
         </div>
         <div class="themePicture">
-            <img src="../Evaluation-maquette-World-Company/images/code.jpg" alt="computer screen">
+            <div class="blocTheme"></div>
         </div>
     </section>
 
     <!--OUR INDUSTRIES-->
-    <section class="ourIndustries">
+    <section class="ourIndustries" id="ourIndustries">
         <div class="industriesTitle">
             <h2>Our industries</h2>
         </div>
         <div class="industries">
-            <div class="finance">
-                <i class="fa-solid fa-chart-pie"></i>
-                <h3>Corporate finance</h3>
+            <div class="industry">
+                <div class="icons"><i class="fa-solid fa-chart-pie"></i></div>
+                <h3><strong>Corporate finance</strong></h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
-            <div class="economy">
-                <i class="fa-solid fa-chart-line"></i>
-                <h3>Economic consulting</h3>
+            <div class="industry">
+                <div class="icons"><i class="fa-solid fa-chart-line"></i></div>
+                <h3><strong>Economic consulting</strong></h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
-            <div class="technology">
-                <i class="fa-solid fa-code-branch"></i>
-                <h3>Technology consulting</h3>
+            <div class="industry">
+                <div class="icons"><i class="fa-solid fa-code-branch"></i></div>
+                <h3><strong>Technology consulting</strong></h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
-            <div class="healthcare">
-                <i class="fa-solid fa-briefcase-medical"></i>
-                <h3>Healthcare consulting</h3>
+            <div class="industry">
+                <div class="icons"><i class="fa-solid fa-briefcase-medical"></i></div>
+                <h3><strong>Healthcare consulting</strong></h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
         </div>
@@ -100,25 +101,27 @@
     
         <!--ADVICE-->
         <section class="advice" id="advice">
-            <div class="adviceTitle">
-                <h2>We advice you</h2>
-            </div>
-            <div class="advice">
-                <div class="companies">
-                    <p>90</p>
-                    <p>Companies consulted</p>
+            <div class="blocAdvice">
+                <div class="adviceTitle">
+                    <h2>We advice you</h2>
                 </div>
-                <div class="consultants">
-                    <p>156</p>
-                    <p>Consultants</p>
-                </div>
-                <div class="awards">
-                    <p>50</p>
-                    <p>Awards winings</p>
-                </div>
-                <div class="customers">
-                    <p>150</p>
-                    <p>Satisfied customers</p>
+                <div class="advice">
+                    <div class="stats">
+                        <p class="number">90</p>
+                        <p>Companies consulted</p>
+                    </div>
+                    <div class="stats">
+                        <p class="number">156</p>
+                        <p>Consultants</p>
+                    </div>
+                    <div class="stats">
+                        <p class="number">50</p>
+                        <p>Awards winings</p>
+                    </div>
+                    <div class="stats">
+                        <p class="number">150</p>
+                        <p>Satisfied customers</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -129,21 +132,21 @@
                 <h2>Meet our team</h2>
             </div>
             <div class="employees">
-                <div class="employee1">
-                    <img src="../Evaluation-maquette-World-Company/images/employee1.png">
-                    <p class="name">Johanna Spencer</p>
+                <div class="employee">
+                    <div class="employee-img" style="background-image: url(../Evaluation-maquette-World-Company/images/employee1.png);"></div>
+                    <p><span>Johanna Spencer</span> - Tax advice</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <p class="phone">+4 72 123456 67</p>
                 </div>
-                <div class="employee2">
-                    <img src="../Evaluation-maquette-World-Company/images/employee2.png">
-                    <p class="name">John Doe</p>
+                <div class="employee">
+                    <div class="employee-img" style="background-image: url(../Evaluation-maquette-World-Company/images/employee2.png);"></div>
+                    <p><span>John Doe</span> - Owner</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <p class="phone">+4 72 123456 89</p>
                 </div>
-                <div class="employee3">
-                    <img src="../Evaluation-maquette-World-Company/images/employee3.png">
-                    <p class="name">Victoria Halston</p>
+                <div class="employee">
+                    <div class="employee-img" style="background-image: url(../Evaluation-maquette-World-Company/images/employee3.png);"></div>
+                    <p><span>Victoria Halston</span> - Consultant</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <p class="phone">+4 72 123456 52</p>
                 </div>
@@ -163,48 +166,50 @@
             <div class="commentsTitle">
                 <h2>What people say</h2>
             </div>
-            <div class="commentsLine1">
-                <div class="employee4">
+            <div class="commentsLine">
+                <div class="employeeComments">
                     <div class="picture">
-                        <img src="../Evaluation-maquette-World-Company/images/employee4.png">
+                        <div class="picture-img" style="background-image: url(../Evaluation-maquette-World-Company/images/employee4.png);"></div>
                         <p>Elena Stans</p>
                     </div>
                     <div class="textComment">
                         <p class="title">Great team ! Thanks for consultation.</p>
-                        <img src="../Evaluation-maquette-World-Company/images/5stars.jpeg">
+                        <img src="../Evaluation-maquette-World-Company/images/5stars.gif">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                 </div>
-                <div class="employee5">
+                <div class="employeeComments">
                     <div class="picture">
-                        <img src="../Evaluation-maquette-World-Company/images/employee5.png">
+                        <div class="picture-img" style="background-image: url(../Evaluation-maquette-World-Company/images/employee5.png);"></div>
                         <p>Matthew Drew</p>
                     </div>
                     <div class="textComment">
                         <p class="title">Great team ! Thanks for consultation.</p>
-                        <img src="../Evaluation-maquette-World-Company/images/5stars.jpeg">
+                        <img src="../Evaluation-maquette-World-Company/images/5stars.gif">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                 </div>
-                <div class="employee6">
+            </div>
+            <div class="commentsLine">
+                <div class="employeeComments">
                     <div class="picture">
-                        <img src="../Evaluation-maquette-World-Company/images/employee6.png">
+                        <div class="picture-img" style="background-image: url(../Evaluation-maquette-World-Company/images/employee6.png);"></div>
                         <p>Mary Evans</p>
                     </div>
                     <div class="textComment">
                         <p class="title">Great team ! Thanks for consultation.</p>
-                        <img src="../Evaluation-maquette-World-Company/images/5stars.jpeg">
+                        <img src="../Evaluation-maquette-World-Company/images/5stars.gif">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                 </div>
-                <div class="employee7">
+                <div class="employeeComments">
                     <div class="picture">
-                        <img src="../Evaluation-maquette-World-Company/images/employee7.png">
+                        <div class="picture-img" style="background-image: url(../Evaluation-maquette-World-Company/images/employee7.png);"></div>
                         <p>Tom Carter</p>
                     </div>
                     <div class="textComment">
                         <p class="title">Great team ! Thanks for consultation.</p>
-                        <img src="../Evaluation-maquette-World-Company/images/5stars.jpeg">
+                        <img src="../Evaluation-maquette-World-Company/images/5stars.gif">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                 </div>
@@ -235,36 +240,38 @@
                     </div>
                 </div>
                 <div class="blog">
-                    <div class="article1">
+                    <p>BLOG</p>
+                    <div class="article">
                         <div class="blog-img">
                             <img src="../Evaluation-maquette-World-Company/images/blog1.jpg" alt="pic1">
                         </div>
                         <div class="text">
-                            <p>Lorem ipsum dolor sit amet.</p>
-                            <p>June 24, 2016</p>
+                            <p>Lorem ipsum dolor sit amet. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            <small>June 24, 2016</small>
                         </div>
                     </div>
-                    <div class="article2">
+                    <div class="article">
                         <div class="blog-img">
                             <img src="../Evaluation-maquette-World-Company/images/blog2.jpg" alt="pic2">
                         </div>
                         <div class="text">
-                            <p>Lorem ipsum dolor sit amet.</p>
-                            <p>Jan 9, 2018</p>
+                            <p>Lorem ipsum dolor sit amet. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            <small>Jan 9, 2018</small>
                         </div>
                     </div>
-                    <div class="article3">
+                    <div class="article">
                         <div class="blog-img">
                             <img src="../Evaluation-maquette-World-Company/images/blog3.jpg" alt="pic3">
                         </div>
                         <div class="text">
-                            <p>Lorem ipsum dolor sit amet.</p>
-                            <p>April 6, 2020</p>
+                            <p>Lorem ipsum dolor sit amet. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            <small>April 6, 2020</small>
                         </div>
                     </div>
                 </div>
                 <div class="instagram">
-                    <div class="insta-img-line1">
+                    <p>INSTAGRAM</p>
+                    <div class="insta-img-line">
                         <div class="insta-img">
                             <img src="../Evaluation-maquette-World-Company/images/insta1.jpg">
                         </div>
@@ -275,7 +282,7 @@
                             <img src="../Evaluation-maquette-World-Company/images/insta3.jpg">
                         </div>
                     </div>
-                    <div class="insta-img-line2">
+                    <div class="insta-img-line">
                         <div class="insta-img">
                             <img src="../Evaluation-maquette-World-Company/images/insta4.jpg">
                         </div>
@@ -286,7 +293,7 @@
                             <img src="../Evaluation-maquette-World-Company/images/insta6.jpg">
                         </div>
                     </div>
-                    <div class="insta-img-line3">
+                    <div class="insta-img-line">
                         <div class="insta-img">
                             <img src="../Evaluation-maquette-World-Company/images/insta7.jpg">
                         </div>
