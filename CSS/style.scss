@@ -114,7 +114,7 @@ header {
             width: 700px;
             height: 50vh;
                 .blocTheme {
-                    width: 95%;
+                    width: 98%;
                     height: 95%;
                     border: 1px solid white;
                 }
@@ -352,6 +352,7 @@ footer {
                 .article .blog-img img {
                     height: 80px;
                     width: 100px;
+                    filter: sepia(80%);
                 }
                 .article .text {
                     height: 80px;
@@ -374,6 +375,7 @@ footer {
                 .insta-img-line .insta-img img {
                     height: 90px;
                     width: 120px;
+                    filter: sepia(80%);
                 }
         }
 }
@@ -388,12 +390,39 @@ footer {
     }
 }
 
+@media all and (max-width:1250px) {
+    footer .mainSocials {
+        .business, .blog, .instagram {
+            width: 280px;
+            height: auto;
+        }
+        .business .followers::after {
+            width: 280px;
+        }
+        .blog .article {
+            height: 120px;
+                .blog-img img {
+                    height: 70px;
+                    width: 90px;
+                }
+        }
+        .instagram .insta-img-line .insta-img img {
+            height: 70px;
+            width: 90px;
+        }
+    }
+}
+
 @media all and (max-width:980px) {
     #comments .commentsLine {
         flex-direction: column;
             .employeeComments {
                 margin: 20px;
             }
+    }
+    footer .mainSocials {
+        flex-direction: column;
+        margin: 10px;
     }
 }
 
